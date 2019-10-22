@@ -190,3 +190,25 @@ p {
   font-size: 1.5vw;
   color: black;
 }
+
+/* divs with the buttons to scroll up and down */
+#scroll_down, #scroll_up {
+  display: flex;
+  justify-content: center;
+}
+
+#scroll_up {
+  margin: 25px;
+}
+
+/* scroll buttons */
+.scroll_btn {
+  border: none;
+  background: #15ff7d;
+  color: #3a3a3a;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 1px 10px -12px rgba(0, 0, 0, 0.4);
+}

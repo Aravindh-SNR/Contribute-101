@@ -25,3 +25,23 @@ const x = setInterval(() => {
     document.getElementById('countdown').innerHTML = 'EXPIRED';
   }
 }, 1000);
+
+// scrolling down to the bottom of the page on clicking the 'Go to bottom' button
+const scrollDownButton = document.querySelector('#scroll_down button');
+
+scrollDownButton.addEventListener('click', () => {
+  window.scroll({
+    top: document.body.clientHeight,
+    behavior: 'smooth'
+  });
+});
+
+// scrolling up to the top of the page on clicking the 'Go to top' button
+const scrollUpButton = document.querySelector('#scroll_up button');
+
+scrollUpButton.addEventListener('click', () => {
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
